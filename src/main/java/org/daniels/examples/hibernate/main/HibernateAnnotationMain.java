@@ -3,14 +3,14 @@ package org.daniels.examples.hibernate.main;
 import java.util.Date;
 
 import org.daniels.examples.hibernate.util.HibernateUtil;
-import org.daniels.examples.model.Employee1;
+import org.daniels.examples.model.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 public class HibernateAnnotationMain {
 
 	public static void main(String[] args) {
-		Employee1 emp = new Employee1();
+		Employee emp = new Employee();
 		emp.setName("David");
 		emp.setRole("Developer");
 		emp.setInsertTime(new Date());
