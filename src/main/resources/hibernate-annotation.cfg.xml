@@ -14,6 +14,10 @@
 		<property name="hibernate.current_session_context_class">thread</property>
 		
 		<!-- Mapping with model class containing annotations -->
-		<mapping class="org.daniels.examples.model.Employee"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.Employee"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.Address"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.Stock"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.StockDetail"/>
+		
 	</session-factory>
 </hibernate-configuration>

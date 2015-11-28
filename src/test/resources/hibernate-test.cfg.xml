@@ -6,7 +6,9 @@
 
 <hibernate-configuration>
     <session-factory>
-        <mapping class="org.daniels.examples.model.User"/>
-        <mapping class="org.daniels.examples.model.Employee1"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.Employee"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.Address"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.Stock"/>
+		<mapping class="org.daniels.examples.hibernate.one2one.main.StockDetail"/>		
     </session-factory>
 </hibernate-configuration>
