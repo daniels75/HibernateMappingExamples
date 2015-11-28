@@ -2,7 +2,6 @@ package org.daniels.examples.hibernate.one2one.main;
 
 import java.util.Objects;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -19,9 +18,9 @@ import org.hibernate.annotations.Parameter;
 @Table(name = "ADDRESS")
 public class Address {
 
-	@GenericGenerator(name = "generator", strategy = "foreign", parameters = @Parameter(name = "property", value = "employee"))
+	@GenericGenerator(name = "addressIdGenerator", strategy = "foreign", parameters = @Parameter(name = "property", value = "employee"))
 	@Id
-	@GeneratedValue(generator = "generator")
+	@GeneratedValue(generator = "addressIdGenerator")
 	@Column(name = "id", unique = true, nullable = false)
 	private Long id;
 	

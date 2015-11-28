@@ -20,15 +20,18 @@ public class OneToOneEmployeeExample {
 		employee.setAddress(address);
 		address.setEmployee(employee);
 		
+		try {
+			final Session session = sessionFactory.getCurrentSession();
+			session.beginTransaction();
+
+			session.save(employee);
+
+			session.getTransaction().commit();
+			System.out.println(employee);
 		
-		final Session session = sessionFactory.getCurrentSession();
-		session.beginTransaction();
-		
-		session.save(employee);
-		
-		session.getTransaction().commit();
-		System.out.println(employee);
-		
-		sessionFactory.close();
+		}
+		finally {
+			sessionFactory.close();
+		}
 	}
 }
