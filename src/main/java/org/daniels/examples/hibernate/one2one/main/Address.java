@@ -30,6 +30,9 @@ public class Address {
 	@Column(name = "city", nullable = false)
 	private String city;
 
+	// can be like following 2 lines
+	//	@OneToOne(fetch=FetchType.LAZY, mappedBy="address")
+	//	@JoinColumn(name="id")
 	@OneToOne(fetch = FetchType.LAZY)
 	@PrimaryKeyJoinColumn
 	private Employee employee;

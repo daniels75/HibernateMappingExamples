@@ -28,6 +28,9 @@ public class Employee {
 	@Column(name = "lastName", nullable = false)
 	private String lastName;
 
+	// can be like following 2 lines
+	//	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	//	@JoinColumn(name="id")
 	@OneToOne(fetch = FetchType.LAZY, mappedBy = "employee", cascade = CascadeType.ALL)
 	private Address address;
 
