@@ -51,8 +51,8 @@ public class EmployeeRev  implements Serializable{
 	 
 	 @OneToMany(cascade=CascadeType.ALL)
 	    @JoinTable(name="EMPLOYEE_ADDRESS_REV",
-	    joinColumns={@JoinColumn(name="EMPLOYEEID", referencedColumnName="ID2"), @JoinColumn(name="EMPLOYEEREV", referencedColumnName="REV")},
-	    inverseJoinColumns={@JoinColumn(name="ADDRESSID", referencedColumnName="ID2"), @JoinColumn(name="ADDRESSREV", referencedColumnName="REV")})
+	    joinColumns={@JoinColumn(name="EMPLOYEEID", referencedColumnName="ID"), @JoinColumn(name="EMPLOYEEREV", referencedColumnName="REV")},
+	    inverseJoinColumns={@JoinColumn(name="ADDRESSID", referencedColumnName="ID"), @JoinColumn(name="ADDRESSREV", referencedColumnName="REV")})
 	 private Set<AddressRev> adddressRev;	 
 //	 
 //    @JoinTable(

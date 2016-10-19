@@ -16,22 +16,24 @@ public class EmployeeAddressRev implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 
+//	@Id
+//	@Column(name = "id")
+//	private Long id;
+//	
+//	
+//	public Long getId() {
+//		return id;
+//	}
+//
+//	public void setId(Long id) {
+//		this.id = id;
+//	}
+
 	@Id
-	@Column(name = "id")
-	private Long id;
-	
-	
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
 	@Column(name = "employeeId")
 	private Integer employeeId;
 
+	@Id
 	@Column(name = "employeeRev")
 	private Integer employeeRev;
 	

@@ -15,11 +15,11 @@ public class MainSaveEmployee {
 		EmployeeRev emplyeeRev = new EmployeeRev();
 		emplyeeRev.setName("dan1");
 		emplyeeRev.setId2(4);
-		emplyeeRev.setRev(2);
+		emplyeeRev.setRev(3);
 		
 		AddressRev addressRev = new AddressRev();
 		addressRev.setId2(3);
-		addressRev.setRev(2);
+		addressRev.setRev(4);
 		
 		Set<AddressRev> addresses = new HashSet<AddressRev>();
 		addresses.add(addressRev);
