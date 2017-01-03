@@ -1,6 +1,8 @@
 package org.daniels.examples.hibernate.joinTable.model;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.daniels.examples.hibernate.util.HibernateUtil;
@@ -15,13 +17,13 @@ public class MainSaveEmployee {
 		EmployeeRev emplyeeRev = new EmployeeRev();
 		emplyeeRev.setName("dan1");
 		emplyeeRev.setId2(4);
-		emplyeeRev.setRev(3);
+		emplyeeRev.setRev(4);
 		
 		AddressRev addressRev = new AddressRev();
 		addressRev.setId2(3);
 		addressRev.setRev(4);
 		
-		Set<AddressRev> addresses = new HashSet<AddressRev>();
+		List<AddressRev> addresses = new ArrayList<AddressRev>();
 		addresses.add(addressRev);
 		
 		emplyeeRev.setAdddressRev(addresses);

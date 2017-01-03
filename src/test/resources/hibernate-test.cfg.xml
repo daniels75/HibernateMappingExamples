@@ -13,7 +13,7 @@
 		
 		<mapping class="org.daniels.examples.hibernate.joinTable.model.EmployeeRev"/>
 		<mapping class="org.daniels.examples.hibernate.joinTable.model.AddressRev"/>
-		<mapping class="org.daniels.examples.hibernate.joinTable.model.EmployeeAddressRev"/>
+		<!--  mapping class="org.daniels.examples.hibernate.joinTable.model.EmployeeAddressRev"/ -->
 				
     </session-factory>
 </hibernate-configuration>

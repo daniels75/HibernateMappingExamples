@@ -53,7 +53,7 @@ public class EmployeeRev  implements Serializable{
 	    @JoinTable(name="EMPLOYEE_ADDRESS_REV",
 	    joinColumns={@JoinColumn(name="EMPLOYEEID", referencedColumnName="ID"), @JoinColumn(name="EMPLOYEEREV", referencedColumnName="REV")},
 	    inverseJoinColumns={@JoinColumn(name="ADDRESSID", referencedColumnName="ID"), @JoinColumn(name="ADDRESSREV", referencedColumnName="REV")})
-	 private Set<AddressRev> adddressRev;	 
+	 private List<AddressRev> adddressRev;	 
 //	 
 //    @JoinTable(
 //            name="EMPLOYEE_ADDRESS_REV",
@@ -67,11 +67,11 @@ public class EmployeeRev  implements Serializable{
 	
 
 	
-	public Set<AddressRev> getAdddressRev() {
+	public List<AddressRev> getAdddressRev() {
 		return adddressRev;
 	}
 
-	public void setAdddressRev(Set<AddressRev> adddressRev) {
+	public void setAdddressRev(List<AddressRev> adddressRev) {
 		this.adddressRev = adddressRev;
 	}
 
